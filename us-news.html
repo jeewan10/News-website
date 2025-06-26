@@ -1,0 +1,548 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="nws.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar fixed-top w-100">
+
+        <div class="w-100">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="nws.html"><img src="header logo.png" class="img-fluid"></a>
+                    
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav d-flex list-style-none">
+                            <li class="nav-item">
+                                <a class="nav-link  text-white fw-semibold d-inline-block"  href="politics.html">POLITICS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white fw-semibold d-inline-block" href="#">U.S.NEWS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white fw-semibold" id="l" href="#">LOCAL
+                                    <ul class="position-fixed d-none list-group " id="list">
+                                        <li class="list-group-item fw-semibold ">New York</li>
+                                        <li class="list-group-item fw-semibold ">Los Angles</li>
+                                        <li class="list-group-item fw-semibold">Chicago</li>
+                                        <li class="list-group-item fw-semibold">Boston</li>
+                                        <li class="list-group-item fw-semibold">Bay Area</li>
+                                        <li class="list-group-item fw-semibold">South Florida</li>
+                                        <li class="list-group-item fw-semibold">San Diego</li>
+                                    </ul>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white fw-semibold" aria-disabled="true">WORLD</a>
+                            </li>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white fw-semibold" aria-disabled="true">BUSINESS</a>
+                        </li>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white  fw-semibold" aria-disabled="true">HEALTH</a>
+                    </li>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white fw-semibold" aria-disabled="true">Editors' picks</a>
+                </li>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white fw-semibold" aria-disabled="true">Shopping</a>
+            </li>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-white fw-semibold" aria-disabled="true">Tipline</a>
+        </li>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link text-white fw-semibold" aria-disabled="true">Sports</a>
+    </li>
+</ul>
+</div>
+
+<button class="navbar-toggler d-inline-block bg-light
+" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+</div>
+</nav>
+</div>
+</nav>
+</header>
+
+<div class="offcanvas offcanvas-end w-100" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="NBC_News_logo.png" class="img-fluid"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <form class="d-flex mt-3" role="search">
+            <input class="form-control me-2 fw-bold" type="search" placeholder="Search NBC News" aria-label="Search">
+            <button class="btn" id="button" type="submit"><img src="search-icon-png-9982.png"></button>
+        </form>
+        <div class="row">
+            
+            <div class="col-lg-6 col-md-12">
+                <a class="nav-link active border-bottom" aria-current="page" href="#">Sections</a>
+                <div class="row">
+                    <div class="col-lg-6 ">
+                        <ul class="navbar-nav d-flex list-style-none">
+                            <li class="nav-item"> 
+                                <a href="#" class="nav-link fw-bold">U.S. News</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link fw-bold">Decision 2024</a>
+                            </li>
+                            <li  class="nav-item">
+                                <a href="politics.html" class="nav-link fw-bold">Politics</a>
+                            </li>
+                            <li  class="nav-item">
+                                <a href="#" class="nav-link fw-bold">World</a>
+                            </li>
+                            <li  class="nav-item">
+                                <a href="#" class="nav-link fw-bold">Business</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link fw-bold">Sports</a>
+                            </li>
+                            <li  class="nav-item">
+                                <a href="" class="nav-link fw-bold">Investigations</a>
+                            </li>
+                            <li  class="nav-item">
+                                <a href="#" class="nav-link fw-bold">Culture & Trends</a>
+                            </li>
+                            <li  class="nav-item">
+                                <a href="#" class="nav-link fw-bold">Health</a>
+                            </li> 
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 ">
+                        <ul class="navbar-nav d-flex list-style-none">
+                            <li  class="nav-item">
+                                <a href="#" class="nav-link fw-bold">Tech & Media</a>
+                            </li> 
+                            <li  class="nav-item">
+                                <a href="#" class="nav-link fw-bold">Weather</a>
+                            </li> 
+                            <li  class="nav-item">
+                                <a href="#" class="nav-link fw-bold">Video Features</a>
+                            </li> 
+                            <li  class="nav-item">
+                                <a href="#" class="nav-link fw-bold">Photos</a>
+                            </li> 
+                            <li  class="nav-item">
+                                <a href="#" class="nav-link fw-bold">NBC Select</a>
+                            </li> 
+                            <li  class="nav-item">
+                                <a href="#" class="nav-link fw-bold">NBC Asian America</a>
+                            </li> 
+                            <li  class="nav-item">
+                                <a href="#" class="nav-link fw-bold">NBC BLK</a>
+                            </li> 
+                            <li  class="nav-item">
+                                <a href="#" class="nav-link fw-bold">NBC Latino</a>
+                            </li> 
+                            <li  class="nav-item">
+                                <a href="#" class="nav-link fw-bold">NBC OUT</a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-6 col-md-12 ">
+                <div class="row">
+                    <div class="col-12 col-md-4 col-lg-4">
+                        <a class="nav-link active border-bottom" aria-current="page" href="#">Local</a>
+                        
+                        <ul class="navbar-nav d-flex flex-column list-style-none">
+                            <li class="nav-item"> 
+                                <a href="#" class="nav-link fw-bold">New York</a>
+                            </li>
+                            <li class="nav-item"> 
+                                <a href="#" class="nav-link fw-bold">Los Angeles</a>
+                            </li>
+                            <li class="nav-item"> 
+                                <a href="#" class="nav-link fw-bold">Chicago</a>
+                            </li>
+                            <li class="nav-item"> 
+                                <a href="#" class="nav-link fw-bold">Dallas-Fort Worth</a>
+                            </li>
+                            <li class="nav-item"> 
+                                <a href="#" class="nav-link fw-bold">Philadelphia</a>
+                            </li>
+                            <li class="nav-item"> 
+                                <a href="#" class="nav-link fw-bold">Washington, D.C.
+                                </a>
+                            </li>
+                            <li class="nav-item"> 
+                                <a href="#" class="nav-link fw-bold">Boston</a>
+                            </li>
+                            <li class="nav-item"> 
+                                <a href="#" class="nav-link fw-bold">Bay Area</a>
+                            </li>
+                            <li class="nav-item"> 
+                                <a href="#" class="nav-link fw-bold">South Florida</a>
+                            </li>
+                            <li class="nav-item"> 
+                                <a href="#" class="nav-link fw-bold">San Diego</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="col-12  col-md-4 col-lg-4">
+                        <a class="nav-link active border-bottom" aria-current="page" href="#">TV</a>
+                        <ul class="navbar-nav d-flex flex-column list-style-none">
+                            <li class="nav-item"> 
+                                <a href="#" class="nav-link fw-bold">Today</a>
+                            </li>
+                            <li class="nav-item"> 
+                                <a href="#" class="nav-link fw-bold">Nightly News</a>
+                            </li>
+                            <li class="nav-item"> 
+                                <a href="#" class="nav-link fw-bold">MSNBC</a>
+                            </li>
+                            <li class="nav-item"> 
+                                <a href="#" class="nav-link fw-bold">Meet the Press</a>
+                            </li>
+                            <li class="nav-item"> 
+                                <a href="#" class="nav-link fw-bold">Dateline</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="col-12 col-md-4 col-lg-4">
+                        <a class="nav-link active border-bottom" aria-current="page" href="#">Featured</a>
+                        <ul class="navbar-nav d-flex flex-column list-style-none">
+                            <li class="nav-item"> 
+                                <a href="#" class="nav-link fw-bold">NBC News Now</a>
+                            </li>
+                            <li class="nav-item"> 
+                                <a href="#" class="nav-link fw-bold">Nightly Films</a>
+                            </li>
+                            <li class="nav-item"> 
+                                <a href="#" class="nav-link fw-bold">Stay Tuned</a>
+                            </li>
+                            <li class="nav-item"> 
+                                <a href="#" class="nav-link fw-bold">Special Features</a>
+                            </li>
+                            <li class="nav-item"> 
+                                <a href="#" class="nav-link fw-bold">Newsletters</a>
+                            </li>
+                            <li class="nav-item"> 
+                                <a href="#" class="nav-link fw-bold">Podcasts</a>
+                            </li>
+                            <li class="nav-item"> 
+                                <a href="#" class="nav-link fw-bold">Listen Now</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <a class="nav-link active border-bottom d-inline-block" aria-current="page" href="#">More From NBC</a>
+                <ul class="navbar-nav d-flex list-style-none">
+                    <li class="nav-item"> 
+                        <a href="#" class="nav-link fw-bold">CNBC</a>
+                    </li>
+                    <li class="nav-item"> 
+                        <a href="#" class="nav-link fw-bold">NBC.COM</a>
+                    </li>
+                    <li class="nav-item"> 
+                        <a href="#" class="nav-link fw-bold">NBCU Academy</a>
+                    </li>
+                    <li class="nav-item"> 
+                        <a href="#" class="nav-link fw-bold">Peacock
+                        </a>
+                    </li>
+                    <li class="nav-item"> 
+                        <a href="#" class="nav-link fw-bold">NEXT STEPS FOR VETS</a>
+                    </li>
+                    <li class="nav-item"> 
+                        <a href="#" class="nav-link fw-bold">NBC News Site Map</a>
+                    </li>
+                    <li class="nav-item"> 
+                        <a href="#" class="nav-link fw-bold">HELP</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="d-flex flex-row justify-content-end">
+                    <div>Follow NBC News</div>
+                    <div class="logo"><img src="fb logo.png" class="img-fluid"></div>
+                    <div class="logo"><img src="x logo.png" class="img-fluid"></div>
+                    <div class="logo"><img src="mail logo.png" class="img-fluid"></div>
+                </div>
+            </div>
+            
+        </div>
+        
+        
+    </div>
+</div>
+
+<section id="body3" class="my-5 p-4">
+    <div class="container">
+        <div class=" p-4">
+            <div class="row">
+                <div class="col">
+                    <h1 class="text-center fw-bold text-white my-3 ">U.S. News</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p class="text-center text-white fs-5">Top stories from around the country.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <div class="my-3 p-4 border-bottom border-dark">
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <div class="border-end border-dark">
+                        <img src="us-img1.png" class="my-2">
+                        <small class="text-primary bg-secondary-subtle">ECONOMY</small>
+                        <h5 class="text-body-emphasis">Helene-hit farmers are still scrounging for recovery funds six months on</h5>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <img src="us-img2.png">
+                    <h5 class="text-body-emphasis my-3">Meet the forensic psychologist set to testify at both Weinstein and Combs trials
+                    </h5>
+                    <div class="border-top border-dark pt-3">
+                        
+                        <img src="small-logo.png" class="me-2"> <span class=" bg-secondary-subtle me-2"><small>DIDDY ON TRIAL</small></span><span class="fw-semibold">What to know about the charges against Diddy</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <div class="border-bottom border-dark">
+            <div class="row">
+                
+                <div class="col-lg-4 col-md-12">
+                    <div class="border-start border-end border-dark p-4">
+
+                    <h5 class="text-body-emphasis">LATEST U.S. NEWS</h5>
+                    <div class="d-flex">
+                            <div class="" >
+                                <img src="p1.png" class="img-fluid">
+                                </div>
+                          
+                        <div class="ps-4">
+                            <small class="text-primary">U.S. news</small>
+                            <p>Parents of toddler guided through wilderness by rancher’s dog call it a 'miracle'</p>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                            <div class="" >
+                                <img src="p2.png" class="img-fluid">
+                                
+                            </div>
+                        <div class="ps-4">
+                            <small class="text-primary">U.S. news</small>
+                            <p>15 years after Deepwater Horizon oil spill, lawsuits stall and restoration is incomplete</p>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                            <div class="" >
+                                <img src="p3.png" class="img-fluid">
+                                
+                            </div>
+                        <div class="ps-4">
+                            <small class="text-primary">U.S. news</small>
+                            <p>60,000 Americans to lose their rental assistance and risk eviction unless Congress acts</p>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                            <div class="" >
+                                <img src="p4.png" class="img-fluid">
+                                
+                            </div>
+                        <div class="ps-4">
+                            <small class="text-primary">U.S. news</small>
+                            <p>Service members killed in border crash were California-based U.S. Marines</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-12">
+                    <div class="border-start border-end border-dark p-4">
+                    <h5 class="text-body-emphasis mb-3">TOP STORIES ON NBC NEWS</h5>
+                    <div class="d-flex mb-3">
+                            <div class="" >
+                                <img src="p11.png" class="img-fluid">
+                                
+                            </div>
+                        <div class="ps-4">
+                            <small class="text-primary">WORLD</small>
+                            <p>Pope Francis dies at age 88</p>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-3">
+                            <div class="" >
+                                <img src="p12.png" class="img-fluid">
+                                
+                            </div>
+                        <div class="ps-4">
+                            <small class="text-primary">Pope Francis</small>
+                            <p>The life of Pope Francis in pictures</p>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-3">
+                            <div class="" >
+                                <img src="p13.png" class="img-fluid">
+                                
+                            </div>
+                        <div class="ps-4">
+                            <small class="text-primary">Live Updates</small>
+                            <p>Live updates: Pope Francis dies at age 88</p>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-3 ">
+                            <div class="mt-4" >
+                                <img src="p14.png" class="img-fluid">
+                                
+                            </div>
+                        <div class="ps-4 mt-3">
+                            <small class="text-primary">National Security</small>
+                            <p>Pete Hegseth shared info ahead of Yemen strikes in a Signal chat with wife and brother</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-12">
+                    <div class="border-start border-end border-dark p-4">
+
+                    <h5 class="text-body-emphasis mb-3">TOP VIDEOS</h5>
+                    <div class="d-flex mb-3">
+                            <div class="" >
+                                <img src="p21.png" class="img-fluid">
+                                
+                            </div>
+                        <div class="ps-4">
+                            <small class="text-primary">Nightly News</small>
+                            <p>How artificial intelligence could shape future of youth sports</p>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-3">
+                            <div class="" >
+                                <img src="p22.png" class="img-fluid">
+                                
+                            </div>
+                        <div class="ps-4">
+                            <small class="text-primary">Nightly News</small>
+                            <p>Lawsuit after organ foundation shuts down</p>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-3">
+                            <div class="" >
+                                <img src="p23.png" class="img-fluid">
+                                
+                            </div>
+                        <div class="ps-4">
+                            <small class="text-primary">Nightly News</small>
+                            <p>L.A. wildfire victims allege home insurance 'collusion'</p>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-3">
+                            <div class="mt-4" >
+                                <img src="p24.png" class="img-fluid">
+                                
+                            </div>
+                        <div class="ps-4 mt-3">
+                            <small class="text-primary">Nightly News</small>
+                            <p>Officials prepare for potential legal battle over congestion pricing</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer id="footer" class="py-5">
+    <div  class="container-fluid">
+        <div class="row">
+            <div class="col-2">
+                <div class="">
+                    <img src="footer-logo.png">
+                </div>
+            </div>
+            
+            <div class="col-9">
+                <div>
+                    <div class="row">
+                        <div class="col">
+                            <ul class="navbar-nav d-flex list-style-none">
+                                <li class="nav-item text-white">About</li>  
+                                <li class="nav-item text-white"> contact</li>                   
+                                <li class="nav-item text-white">Help</li>                   
+                                <li class="nav-item text-white"> Careers</li>                   
+                                <li class="nav-item text-white">Ad Choices</li>                   
+                                
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <ul class="navbar-nav d-flex list-style-none">
+                                <li class="nav-item text-white">Privacy Policy
+                                </li>  
+                                <li class="nav-item text-white">Cookie Notice</li>                   
+                                <li class="nav-item text-white">CA Notice</li>                   
+                                <li class="nav-item text-white">Terms of Service (Updated JULY 7, 2023)
+                                </li>                   
+                                <li class="nav-item text-white">NBC News Sitemap</li>                   
+                                
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <ul class="navbar-nav d-flex list-style-none">
+                                <li class="nav-item text-white">Closed Captioning</li>  
+                                <li class="nav-item text-white"> Advertise</li>                   
+                                <li class="nav-item text-white"> Select Shopping</li>                   
+                                
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<script src="nws.js"></script>
+
+</body>
+</html>
